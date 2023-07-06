@@ -171,20 +171,20 @@ class PassInformation(object):
         self.back_fields = []
         self.auxiliary_fields = []
 
-    def add_header_field(self, key, value, label):
-        self.header_fields.append(Field(key, value, label))
+    def add_header_field(self, key, value, label, textAlignment):
+        self.header_fields.append(Field(key, value, label, textAlignment))
 
-    def add_primary_field(self, key, value, label):
-        self.primary_fields.append(Field(key, value, label))
+    def add_primary_field(self, key, value, label, textAlignment):
+        self.primary_fields.append(Field(key, value, label, textAlignment))
 
-    def add_secondary_field(self, key, value, label):
-        self.secondary_fields.append(Field(key, value, label))
+    def add_secondary_field(self, key, value, label, textAlignment):
+        self.secondary_fields.append(Field(key, value, label, textAlignment))
 
-    def add_back_field(self, key, value, label):
-        self.back_fields.append(Field(key, value, label))
+    def add_back_field(self, key, value, label, textAlignment):
+        self.back_fields.append(Field(key, value, label, textAlignment))
 
-    def add_auxiliary_field(self, key, value, label):
-        self.auxiliary_fields.append(Field(key, value, label))
+    def add_auxiliary_field(self, key, value, label, textAlignment):
+        self.auxiliary_fields.append(Field(key, value, label, textAlignment))
 
     def json_dict(self):
         d = {}
