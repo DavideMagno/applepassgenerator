@@ -281,7 +281,7 @@ class ApplePass(object):
         self.barcode = None  # Optional. Information specific to barcodes. This is deprecated and can only be set to original barcode formats.
         self.barcodes = None  # Optional.  All supported barcodes
         # Optional. If true, the strip image is displayed
-        self.suppress_strip_shine = False
+        self.suppress_strip_shine = True
 
         # Web Service Keys
 
